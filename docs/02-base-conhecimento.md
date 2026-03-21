@@ -27,21 +27,15 @@ Fiz alteração nos dados para incluir o fundo imobiliario e substitui o fundome
 Existem duas maneiras de se fazer, inserir os dados manualmente (CTRL C + CTRL V) ou carregar os arquivos diretamente via codigo como no exmplo a seguir:
 
 ```python
-import panda as pd
 import json
+import pandas as pd
 
-#CSVs
+# ========== CARREGAR DADOS ============
+perfil = json.load(open('./data/perfil_investidor.json'))
+transacoes = pd.read_csv('./data/transacoes.csv')
+historico = pd.red_csv('./data/historico_atendimento.csv')
+produtos = json.load(open('./data/produtos_financeiros.json'))
 
-historico = pd.read_csv(`data/historico_atendimento.csv`)
-transações = pd.reas_csv(`data/transações.csv`)
-
-#JSONs
-
-with open (`data/perfil_investidor,json` , `r` , encoding = `utf-8`) as f;
-  perfil = json.load(f)
-
-with open (`data/produtos_financeiros.json` , `r` , encondig = `utf-8`) as f;
-  produtos = json.load(f)
 
 ```
 
