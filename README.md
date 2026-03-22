@@ -1,149 +1,198 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 📊 Leo, o Educador Financeiro
 
-## Contexto
-
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
-## O Que Você Deve Entregar
+## 🧠 Visão Geral
 
-### 1. Documentação do Agente
+O **Leo, o Educador Financeiro** é um assistente inteligente desenvolvido para ajudar usuários a entender, organizar e melhorar sua vida financeira.
 
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+A solução utiliza **Inteligência Artificial + análise de dados** para interpretar o comportamento financeiro do usuário e fornecer orientações personalizadas de forma simples, prática e educativa.
 
 ---
 
-### 2. Base de Conhecimento
+## 🚀 Motivação
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+Muitas pessoas têm dificuldade em:
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
+* Entender para onde vai seu dinheiro
+* Organizar gastos mensais
+* Tomar decisões de investimento
+* Identificar oportunidades de economia
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+O projeto foi criado para resolver esse problema usando IA como um **educador financeiro digital acessível**.
 
 ---
 
-### 3. Prompts do Agente
+## 🎯 Objetivos do Projeto
 
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+* Transformar dados financeiros em insights claros
+* Simular um educador financeiro inteligente
+* Auxiliar na tomada de decisão com base em dados reais
+* Criar uma solução prática utilizando IA generativa
 
 ---
 
-### 4. Aplicação Funcional
+## ⚙️ Tecnologias Utilizadas
 
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
+* **Python** → processamento e lógica
+* **Pandas** → análise de dados
+* **JSON / CSV** → armazenamento de dados
+* **Streamlit** → interface interativa
+* **Ollama (LLM local)** → geração de respostas inteligentes
 
 ---
 
-### 5. Avaliação e Métricas
+## 🏗️ Arquitetura da Solução
 
-Descreva como você avalia a qualidade do seu agente:
+```bash
+📁 data/
+ ├── perfil_investidor.json   # Dados do perfil do usuário
+ ├── transacoes.csv          # Histórico financeiro
 
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
+📁 app/
+ ├── main.py                 # Aplicação principal (Streamlit)
 
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
+📁 utils/
+ ├── processamento.py        # (opcional) tratamento de dados
 
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+README.md
 ```
 
 ---
 
-## Dicas Finais
+## 🔄 Como Funciona
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+1. 📥 **Entrada de Dados**
+   O sistema carrega:
+
+   * Perfil do investidor
+   * Histórico de transações
+
+2. ⚙️ **Processamento**
+   Os dados são tratados e organizados para análise
+
+3. 🧠 **IA (LLM)**
+   O modelo interpreta os dados e responde com base no contexto
+
+4. 📊 **Interface**
+   O usuário interage via Streamlit com respostas claras e objetivas
+
+---
+
+## 💬 Exemplos de Perguntas
+
+* “Como estão meus gastos este mês?”
+* “Estou gastando mais do que deveria?”
+* “Qual meu perfil de investidor?”
+* “Onde posso economizar?”
+* “Estou pronto para investir?”
+
+---
+
+## 🖥️ Interface (Exemplo)
+
+> *(Adicione aqui prints da sua aplicação depois — isso aumenta MUITO o impacto do portfólio)*
+
+```bash
+📌 Dica: use prints mostrando perguntas e respostas do Leo
+```
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/Markin11-Dev/dio-lab-bia-do-futuro
+```
+
+### 2. Acesse a pasta
+
+```bash
+cd dio-lab-bia-do-futuro
+```
+
+### 3. Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Execute a aplicação
+
+```bash
+streamlit run app/main.py
+```
+
+### 5. Execute o modelo local (Ollama)
+
+Certifique-se de que está rodando em:
+
+```bash
+http://localhost:11434
+```
+
+---
+
+## ⚠️ Pontos de Atenção
+
+* Modelos locais podem exigir **memória RAM suficiente**
+* Verifique caminhos dos arquivos de dados
+* Projeto com finalidade **educacional**
+
+---
+
+## 📈 Melhorias Futuras
+
+* 📊 Dashboard com gráficos interativos
+* 🤖 Classificação automática de gastos
+* 🌐 Integração com APIs financeiras
+* 📉 Alertas de comportamento financeiro
+* 🧾 Recomendações de investimento mais avançadas
+
+---
+
+## 🧩 Diferenciais do Projeto
+
+* Uso de **IA aplicada a dados reais**
+* Simulação de um **educador financeiro**
+* Integração entre **dados estruturados + linguagem natural**
+* Interface simples e funcional
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Marco Antonio**
+Como parte de um desafio prático com foco em:
+
+* Inteligência Artificial
+* Análise de Dados
+* Desenvolvimento de aplicações reais
+
+---
+
+## ⭐ Contribuição
+
+Sinta-se à vontade para:
+
+* Abrir issues
+* Sugerir melhorias
+* Contribuir com novas funcionalidades
+
+---
+
+## 📌 Considerações Finais
+
+O **Leo** não substitui um especialista financeiro, mas atua como um **guia inteligente**, ajudando o usuário a tomar decisões mais conscientes e baseadas em dados.
+
+---
+
+💡 *Projeto ideal para demonstrar habilidades em IA, dados e desenvolvimento aplicado.*
+
