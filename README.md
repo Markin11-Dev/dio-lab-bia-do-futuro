@@ -96,7 +96,6 @@ README.md
 
 ## 🖥️ Interface (Exemplo)
 
-> *(Adicione aqui prints da sua aplicação depois — isso aumenta MUITO o impacto do portfólio)*
 
 ```bash
 📌 Dica: use prints mostrando perguntas e respostas do Leo
