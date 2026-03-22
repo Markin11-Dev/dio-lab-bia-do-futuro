@@ -2,28 +2,32 @@
 
 > [!TIP]
 > Você pode usar alguns slides pra apoiar no seu Pitch e mostrar sua solução na prática.
+
+| Tempo | Seção | O que falar |
+| ----- | ----- | ----------- |
+| 0:00 - 0:30 | Problemas | A dor que resolveu |
+| 0:30 - 1:30 | Soluçao | Como o Leo resolve |
+| 1:30 - 2:30 | Demo | Mostre funcionando |
+| 2:30 - 3:00 | Diferencial | Por que é inovador |
+
  
 ## Roteiro Sugerido
 
-### 1. O Problema (30 seg)
-> Qual dor do cliente você resolve?
+### 1. 🎯 O Problema (30 seg)
+> 62% dos brasileiros não sabem o que é reserva de emergência. Muita gente quer aprender sobre finanças, mas não sabe por onde começar, e tem medo de perguntar.
 
-[Sua descrição aqui]
+### 2. 💡 A Solução (1 min)
+>"O Leo é um educador financeiro que ensina de forma personalizada. Ele usa seus próprios dados para dar exemplos práticos. Não recomenda investimentos, só educa. É como ter um professor particular de finanças 24h."
 
-### 2. A Solução (1 min)
-> Como seu agente resolve esse problema?
+### 3. 📱 Demonstração (1 min)
+> [Compartilhe a tela e faça 2-3 perguntas ao Leo.]
 
-[Sua descrição aqui]
+"O que é CDI ?"
+"Onde estou gastando mais?"
+"Me explique o que é Tsouro Selic"
 
-### 3. Demonstração (1 min)
-> Mostre o agente funcionando (pode ser gravação de tela)
-
-[Descreva o que será mostrado]
-
-### 4. Diferencial e Impacto (30 seg)
-> Por que essa solução é inovadora e qual é o impacto dela na sociedade?
-
-[Sua descrição aqui]
+### 4. ⭐ Diferencial e Impacto (30 seg)
+> "Diferente de Chatsboxs genéricos, o Leo usa SEUS dados como exemplo. Isso torna o aprendizado concreto. E o melhor: Roda 100% localsem custo e sem enviar seus dados para ninguém."
 
 ---
 
@@ -39,6 +43,6 @@
 
 ## Link do Vídeo
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
+> https://drive.google.com/file/d/1tVYgivGlEbKg8KWDtk6gwA9SWzRo6b8h/view?usp=sharing
 
-[Link do vídeo]
+
